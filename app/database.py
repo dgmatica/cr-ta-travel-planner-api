@@ -12,6 +12,8 @@ engine = create_engine(
 
 
 def create_db_and_tables() -> None:
+    from app import models
+
     SQLModel.metadata.create_all(engine)
 
 
