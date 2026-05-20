@@ -46,6 +46,14 @@ def update_project(
 
 
 def delete_project(session: Session, project: Project) -> None:
+    places = get_project_places(
+        session=session,
+        project_id=project.id,
+    )
+
+    for place in places:
+        session.delete(place)
+
     session.delete(project)
     session.commit()
 
