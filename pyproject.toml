@@ -1,0 +1,20 @@
+[project]
+name = "cr-ta-travel-planner-api"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "dgmatica",email = "denisx1672@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.136.1,<0.137.0)",
+    "uvicorn[standard] (>=0.47.0,<0.48.0)",
+    "sqlmodel (>=0.0.38,<0.0.39)",
+    "httpx (>=0.28.1,<0.29.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

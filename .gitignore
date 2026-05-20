@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+travel_planner.db
+*.db
+*.sqlite3
+
+.pytest_cache/
+.ruff_cache/
